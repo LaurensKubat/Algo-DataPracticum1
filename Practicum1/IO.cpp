@@ -1,7 +1,39 @@
 #include <vector>
 #include <iostream>
+#include "graph.h"
 
 using namespace std;
+
+/*
+parseInput reads the input up until the edges of the graph are read
+and then uses parseGraph to parse the rest of the graph based on the edges
+*/
+Graph parseInput() {
+    int nodes = 0;
+    int edges = 0;
+    int infected = 0;
+    double p = 0;
+    int lowerBound = 0;
+    int upperBound = 0;
+    Graph g;
+
+    cin >> nodes;
+    cin >> edges;
+    cin >> infected;
+    cin >> p;
+    cin >> lowerBound >> upperBound;
+    g = readGraph();
+
+    return g
+}
+
+/*
+readGraph reads the graph and stores it based on the input of the edges
+*/
+// TODO implement readGraph
+Graph readGraph() {
+
+}
 
 /* 
 test takes a vector of ints (where the int is the id of the vertex)
